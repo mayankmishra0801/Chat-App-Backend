@@ -9,7 +9,7 @@ router.get("/users",protectRoute,getUserForSidebar)
 
 router.get("/:id",protectRoute,getMessages)
 
-router.get("/send/:id",protectRoute,sendMessage)
+router.post("/send/:id",protectRoute,sendMessage)
 
 
 export default router;
