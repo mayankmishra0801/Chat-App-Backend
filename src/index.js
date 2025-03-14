@@ -23,7 +23,7 @@ app.use(cors(
 
 
         origin:"*",
-        credentials:true
+        // credentials:true
     }
   
 ))
@@ -37,6 +37,6 @@ app.use("/api/messages",messageRoutes)
 
 
 server.listen(PORT,()=>{
-    console.log("Server is running on PORT" + PORT)
+    console.log("Server is running on PORT " + PORT)
     connectDB()
 })
